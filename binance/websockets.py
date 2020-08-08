@@ -64,6 +64,7 @@ class BinanceClientFactory(WebSocketClientFactory, BinanceReconnectingClientFact
 class BinanceSocketManager(threading.Thread):
 
     STREAM_URL = 'wss://stream.binance.com:9443/'
+    FUTURES_STREAM_URL = 'wss://stream.binance.com:9443/'
 
     WEBSOCKET_DEPTH_5 = '5'
     WEBSOCKET_DEPTH_10 = '10'
